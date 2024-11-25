@@ -12,7 +12,9 @@ The three main rules which specify the behavior of each entity are:
 - **Alignment:** every entity tries to align itself with the alignment of other nearby entities perceived.
 - **Separation:** every entity tries to maintain distance between itself, and other nearby entities perceived.
 - **Cohesion:** every entity tries to get nearer to other nearby entities perceived.
+  
 On top of these, three more rules apply:
+
 - **Repulsion:** every entity gets moved away from a specific location (your mouse pointer in case of a double click).
 - **Attraction:** every entity orbits around a specific location (your mouse pointer when you keep pressing the right button).
 - **Escape:** every entity tries to escape from a predator, a different entity that wander in the same space but without a specific behavior.
@@ -33,5 +35,17 @@ This project has been developed with Unity 2022.3.32f1.
 #### Is there any configuration file?
 
 Yes, a JSON file named flocking_starter.json and located under \Assets\Resources folder is read at project startup.
-It contains every simulation settings and it's a recommended set of parameters to start of. You can change this settings at runtime through UI panel.
+It contains every simulation setting and it's a recommended set of parameters to start with. You can change these settings at runtime through the UI panel.
 
+#### What are the keys?
+
+- Left mouse click: to spawn a new entity.
+- Double left mouse click: to make an explosion.
+- Hold right mouse button: to attract the boids and make them orbiting around cursor.
+- Alt + left mouse click: to navigate the scene (pan).
+- Mouse wheel: to zoom in/out the scene.
+- Wheel mouse click: to show/hide the UI panel.
+
+#### What about the performances?
+
+On a 11th Gen Intel(R) Core(TM) i7-11700KF @ 3.60GHz equipped with NVIDIA RTX GeForce 3070ti I can run the simulation with 1200 boids and 2 predators at a stable 90 FPS.
