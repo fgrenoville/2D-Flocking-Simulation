@@ -1,0 +1,245 @@
+{
+	"General": {
+		"UsePostProcessingEffects": true
+	},
+	"Boids": {
+		"SpawnAtStart": {
+			"value": 1000,
+			"min": 10,
+			"max": 2000
+		},
+		"Behavior": {
+			"MinSpeed": {
+				"value": 0,
+				"min": 0,
+				"max": 20
+			},
+			"MaxSpeed": {
+				"value": 5,
+				"min": 1,
+				"max": 30
+			},
+			"MovementAccuracy": {
+				"value": 32,
+				"min": 10,
+				"max": 500
+			},
+			"DragFactor": {
+				"value": 0.0001,
+				"min": 0.0001,
+				"max": 0.01
+			}
+		},
+		"Alignment": {
+			"PerceptionRadius": {
+				"value": 2.1,
+				"min": 0,
+				"max": 20
+			},
+			"PerceptionAngle": {
+				"value": 65,
+				"min": 0,
+				"max": 360
+			},
+			"MinDistanceWeight": {
+				"value": 1,
+				"min": 0.5,
+				"max": 20
+			},
+			"MaxDistanceWeight": {
+				"value": 10,
+				"min": 0.5,
+				"max": 20
+			},
+			"DesiredMagnitude": {
+				"value": 4,
+				"min": 1,
+				"max": 20
+			},
+			"MaxSteeringForce": {
+				"value": 0.025,
+				"min": 0,
+				"max": 0.5
+			},
+			"ScaleForce": {
+				"value": 1,
+				"min": 0,
+				"max": 5
+			}
+		},
+		"Separation": {
+			"PerceptionRadius": {
+				"value": 0.45,
+				"min": 0,
+				"max": 20
+			},
+			"PerceptionAngle": {
+				"value": 120,
+				"min": 0,
+				"max": 360
+			},
+			"MinDistanceWeight": {
+				"value": 16,
+				"min": 0.5,
+				"max": 20
+			},
+			"MaxDistanceWeight": {
+				"value": 1,
+				"min": 0.5,
+				"max": 20
+			},
+			"DesiredMagnitude": {
+				"value": 5,
+				"min": 1,
+				"max": 20
+			},
+			"MaxSteeringForce": {
+				"value": 0.009,
+				"min": 0,
+				"max": 0.5
+			},
+			"ScaleForce": {
+				"value": 1,
+				"min": 0,
+				"max": 5
+			}
+		},
+		"Cohesion": {
+			"PerceptionRadius": {
+				"value": 0.8,
+				"min": 0,
+				"max": 20
+			},
+			"PerceptionAngle": {
+				"value": 240,
+				"min": 0,
+				"max": 360
+			},
+			"MinDistanceWeight": {
+				"value": 1,
+				"min": 0.5,
+				"max": 20
+			},
+			"MaxDistanceWeight": {
+				"value": 8,
+				"min": 0.5,
+				"max": 20
+			},
+			"DesiredMagnitude": {
+				"value": 2,
+				"min": 1,
+				"max": 20
+			},
+			"MaxSteeringForce": {
+				"value": 0.002,
+				"min": 0,
+				"max": 0.5
+			},
+			"ScaleForce": {
+				"value": 1,
+				"min": 0,
+				"max": 5
+			}
+		},
+		"Escape": {
+			"PerceptionRadius": {
+				"value": 4.3,
+				"min": 0,
+				"max": 20
+			},
+			"SpeedFactor": {
+				"value": 5.2,
+				"min": 0.1,
+				"max": 20
+			},
+			"MaxSteeringForce": {
+				"value": 0.18,
+				"min": 0,
+				"max": 2
+			}
+		},
+		"Attraction": {
+			"InteractionRadius": {
+				"value": 11,
+				"min": 0,
+				"max": 20
+			},
+			"SpeedFactor": {
+				"value": 15.5,
+				"min": 0.1,
+				"max": 20
+			},
+			"MinSteeringForce": {
+				"value": 0,
+				"min": 0,
+				"max": 2
+			},
+			"MaxSteeringForce": {
+				"value": 0.2,
+				"min": 0,
+				"max": 2
+			},
+			"OrbitRadius": {
+				"value": 3.5,
+				"min": 0.5,
+				"max": 10
+			}
+		},
+		"Repulsion": {
+			"InteractionRadius": {
+				"value": 10.5,
+				"min": 0,
+				"max": 20
+			},
+			"SpeedFactor": {
+				"value": 160,
+				"min": 0,
+				"max": 200
+			},
+			"MaxSteeringForce": {
+				"value": 11.6,
+				"min": 0.1,
+				"max": 30
+			}
+		}		
+	},
+	"Predators": {
+		"SpawnAtStart": {
+			"value": 2,
+			"min": 1,
+			"max": 50
+		},
+		"Behavior": {
+			"MinSpeed": {
+				"value": 1.1,
+				"min": 0,
+				"max": 20
+			},
+			"MaxSpeed": {
+				"value": 4.9,
+				"min": 1,
+				"max": 30
+			},
+			"WanderRadius": {
+				"value": 7,
+				"min": 0,
+				"max": 30
+			},
+			"WanderDistance": {
+				"value": 13,
+				"min": 0,
+				"max": 60
+			},
+			"MaxSteeringForce": {
+				"value": 0.27,
+				"min": 0,
+				"max": 2
+			},
+			"VariationRange": {
+				"value": 10,
+				"min": 0,
+				"max": 20
+			}
+		}
+	}
+}
